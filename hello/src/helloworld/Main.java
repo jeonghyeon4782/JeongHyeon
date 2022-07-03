@@ -2,7 +2,7 @@ package helloworld;
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("¾È³ç");
-		System.out.println("¼öÁ¤»çÇ×12345");
+		System.out.println("ì•ˆë…•");
+		System.out.println("ì•ˆë…•12345");
 	}
 }
