@@ -1,28 +1,29 @@
 package helloworld;
 
-class MyException extends Exception {
-	int x;
-
-	public MyException(int x) {
-		this.x = x;
-	}
-	
-	public String toString() {
-		return "I am " + x;
-	}
-	
-}
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class Main {
-	public static void main(String[] args) {
-		MyException me = new MyException(10);
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int N = Integer.parseInt(br.readLine());
+		int[] arr = new int[N];
 		
-		try {
-			System.out.println("예외를 던지기 전");
-			throw me;
-		} catch (MyException e) {
-			System.out.println(e);
+
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		for(int i = 0; i < N; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
 		}
-		System.out.println("end");
+		bw.write(Arrays.toString(arr));
+		bw.flush();
+		bw.close();
+		br.close();
 	}
 }
