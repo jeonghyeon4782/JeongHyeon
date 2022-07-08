@@ -73,13 +73,13 @@ public class Calculator {
 		frmHello = new JFrame();
 		frmHello.setTitle("장정현 계산기");
 		frmHello.getContentPane().setBackground(Color.LIGHT_GRAY);
-		frmHello.setBounds(100, 100, 272, 412);
+		frmHello.setBounds(100, 100, 305, 449);
 		frmHello.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmHello.getContentPane().setLayout(null);
 
 		txtDisplay = new JTextField();
 		txtDisplay.setHorizontalAlignment(SwingConstants.RIGHT);
-		txtDisplay.setBounds(10, 5, 230, 51);
+		txtDisplay.setBounds(10, 5, 272, 51);
 		frmHello.getContentPane().add(txtDisplay, BorderLayout.NORTH);
 		txtDisplay.setColumns(10);
 		
@@ -101,7 +101,7 @@ public class Calculator {
 				}
 			}
 		});
-		btnBack.setBounds(10, 66, 50, 50);
+		btnBack.setBounds(10, 66, 60, 60);
 		frmHello.getContentPane().add(btnBack);
 
 		btnInti = new JButton("C");
@@ -111,7 +111,7 @@ public class Calculator {
 				txtDisplay.setText(null);
 			}
 		});
-		btnInti.setBounds(70, 66, 50, 50);
+		btnInti.setBounds(80, 66, 60, 60);
 		frmHello.getContentPane().add(btnInti);
 
 		btnPercent = new JButton("%");
@@ -123,7 +123,7 @@ public class Calculator {
 			}
 		});
 		btnPercent.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btnPercent.setBounds(130, 66, 50, 50);
+		btnPercent.setBounds(150, 66, 60, 60);
 		frmHello.getContentPane().add(btnPercent);
 
 		btnPlus = new JButton("+");
@@ -135,7 +135,7 @@ public class Calculator {
 				operations = "+";
 			}
 		});
-		btnPlus.setBounds(190, 66, 50, 50);
+		btnPlus.setBounds(220, 66, 60, 60);
 		frmHello.getContentPane().add(btnPlus);
 		
 		// ---------------------- row 2 ----------------------------------
@@ -148,7 +148,7 @@ public class Calculator {
 			}
 		});
 		btn7.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn7.setBounds(10, 126, 50, 50);
+		btn7.setBounds(10, 136, 60, 60);
 		frmHello.getContentPane().add(btn7);
 		
 		JButton btn8 = new JButton("8");
@@ -159,7 +159,7 @@ public class Calculator {
 			}
 		});
 		btn8.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn8.setBounds(70, 126, 50, 50);
+		btn8.setBounds(80, 136, 60, 60);
 		frmHello.getContentPane().add(btn8);
 		
 		JButton btn9 = new JButton("9");
@@ -170,7 +170,7 @@ public class Calculator {
 			}
 		});
 		btn9.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn9.setBounds(130, 126, 50, 50);
+		btn9.setBounds(150, 136, 60, 60);
 		frmHello.getContentPane().add(btn9);
 		
 		JButton btnSub = new JButton("-");
@@ -182,7 +182,7 @@ public class Calculator {
 			}
 		});
 		btnSub.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btnSub.setBounds(190, 126, 50, 50);
+		btnSub.setBounds(220, 136, 60, 60);
 		frmHello.getContentPane().add(btnSub);
 		
 		// ---------------------- row 3 ----------------------------------
@@ -195,7 +195,7 @@ public class Calculator {
 			}
 		});
 		btn4.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn4.setBounds(10, 186, 50, 50);
+		btn4.setBounds(10, 206, 60, 60);
 		frmHello.getContentPane().add(btn4);
 		
 		JButton btn5 = new JButton("5");
@@ -206,7 +206,7 @@ public class Calculator {
 			}
 		});
 		btn5.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn5.setBounds(70, 186, 50, 50);
+		btn5.setBounds(80, 206, 60, 60);
 		frmHello.getContentPane().add(btn5);
 		
 		JButton btn6 = new JButton("6");
@@ -217,7 +217,7 @@ public class Calculator {
 			}
 		});
 		btn6.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn6.setBounds(130, 186, 50, 50);
+		btn6.setBounds(150, 206, 60, 60);
 		frmHello.getContentPane().add(btn6);
 		
 		JButton btnMul = new JButton("*");
@@ -229,7 +229,7 @@ public class Calculator {
 			}
 		});
 		btnMul.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btnMul.setBounds(190, 186, 50, 50);
+		btnMul.setBounds(220, 206, 60, 60);
 		frmHello.getContentPane().add(btnMul);
 		
 		// ---------------------- row 4 ----------------------------------
@@ -242,7 +242,7 @@ public class Calculator {
 			}
 		});
 		btn1.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn1.setBounds(10, 246, 50, 50);
+		btn1.setBounds(10, 276, 60, 60);
 		frmHello.getContentPane().add(btn1);
 		
 		JButton btn2 = new JButton("2");
@@ -253,7 +253,7 @@ public class Calculator {
 			}
 		});
 		btn2.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn2.setBounds(70, 246, 50, 50);
+		btn2.setBounds(80, 276, 60, 60);
 		frmHello.getContentPane().add(btn2);
 		
 		JButton btn3 = new JButton("3");
@@ -264,7 +264,7 @@ public class Calculator {
 			}
 		});
 		btn3.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn3.setBounds(130, 246, 50, 50);
+		btn3.setBounds(150, 276, 60, 60);
 		frmHello.getContentPane().add(btn3);
 		
 		JButton btnDiv = new JButton("/");
@@ -276,7 +276,7 @@ public class Calculator {
 			}
 		});
 		btnDiv.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btnDiv.setBounds(190, 246, 50, 50);
+		btnDiv.setBounds(220, 276, 60, 60);
 		frmHello.getContentPane().add(btnDiv);
 		
 		// ---------------------- row 5 ----------------------------------
@@ -289,7 +289,7 @@ public class Calculator {
 			}
 		});
 		btn0.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btn0.setBounds(10, 306, 50, 50);
+		btn0.setBounds(10, 346, 60, 60);
 		frmHello.getContentPane().add(btn0);
 		
 		JButton btnDot = new JButton(".");
@@ -298,7 +298,7 @@ public class Calculator {
 			}
 		});
 		btnDot.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btnDot.setBounds(70, 306, 50, 50);
+		btnDot.setBounds(80, 346, 60, 60);
 		frmHello.getContentPane().add(btnDot);
 		
 		JButton btnTransfer = new JButton("±");
@@ -310,7 +310,7 @@ public class Calculator {
 			}
 		});
 		btnTransfer.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btnTransfer.setBounds(130, 306, 50, 50);
+		btnTransfer.setBounds(150, 346, 60, 60);
 		frmHello.getContentPane().add(btnTransfer);
 		
 		JButton btnEqual = new JButton("=");
@@ -352,7 +352,7 @@ public class Calculator {
 			}
 		});
 		btnEqual.setFont(new Font("함초롬바탕", Font.BOLD, 20));
-		btnEqual.setBounds(190, 306, 50, 50);
+		btnEqual.setBounds(220, 346, 60, 60);
 		frmHello.getContentPane().add(btnEqual);
 
 
