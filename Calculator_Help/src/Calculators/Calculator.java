@@ -295,6 +295,8 @@ public class Calculator {
 		JButton btnDot = new JButton(".");
 		btnDot.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String EnterNumber = txtDisplay.getText() + btnDot.getText();
+				txtDisplay.setText(EnterNumber);
 			}
 		});
 		btnDot.setFont(new Font("함초롬바탕", Font.BOLD, 20));
